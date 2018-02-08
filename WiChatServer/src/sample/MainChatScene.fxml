@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="672.0" style="-fx-background-color: #101012;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainChatScene">
+    <children>
+        <Label fx:id="closeLabel" layoutX="655.0" layoutY="-8.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="33.0" prefWidth="13.0" text="x" textFill="WHITE">
+            <font>
+                <Font name="Consolas" size="21.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="sendMsgImg" fitHeight="33.0" fitWidth="34.0" layoutX="629.0" layoutY="416.0" onMouseClicked="#test" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../SendMsg.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea layoutX="25.0" layoutY="415.0" prefHeight="20.0" prefWidth="599.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+    </children>
+</Pane>
